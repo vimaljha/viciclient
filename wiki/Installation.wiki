@@ -17,7 +17,16 @@ Download the [http://surfnet.dl.sourceforge.net/sourceforge/php-java-bridge/php-
 
 `/usr/bin/java -jar /var/java/JavaBridge.jar SERVLET:8080 5 /var/java/JavaBridge.log &`
 
-Update `php.ini` or create a new file in `php.d/`
+Append this to `php.ini` or put it in a new file, `php.d/java.ini`
+
+{{{
+extension = java.so
+
+[java]
+java.hosts     = 127.0.0.1:8080
+java.servlet   = On
+java.log_level  = 3
+}}}
 
 = Checking out the codebase =
 
