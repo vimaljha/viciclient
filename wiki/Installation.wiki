@@ -12,7 +12,12 @@ extension=json.so
 appears in your php.ini file or in one of the included ini files in the php.d directory.
 
 = Installing the PHP-Java bridge for JasperReports =
-To be filled in later
+
+Download the [http://surfnet.dl.sourceforge.net/sourceforge/php-java-bridge/php-java-bridge_5.2.2.1_j2ee.zip PHP-Java Bridge]. Create a directory for the package, we'll use `/var/java`.
+
+`/usr/bin/java -jar /var/java/JavaBridge.jar SERVLET:8080 5 /var/java/JavaBridge.log &`
+
+Update `php.ini` or create a new file in `php.d/`
 
 = Checking out the codebase =
 
