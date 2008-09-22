@@ -1,0 +1,11 @@
+#summary ViciClient installation instructions
+
+= Checking out the codebase =
+
+svn co http://
+
+
+= Configuring ViciClient =
+
+app/config/core.php
+app/config/database.php
