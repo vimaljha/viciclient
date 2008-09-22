@@ -35,6 +35,20 @@ svn co http://
 = Configuring ViciClient =
 
 == app/config/core.php ==
+{{{
+Configure::write('Security.salt', 'DYhGaab0qyJfIxfs2guVoUubWwvniR2G0FgaC9mi');
+}}}
+
+{{{
+Cache::config('default', array(
+ 		'engine' => 'Xcache', //[required]
+ 		'duration'=> 3600, //[optional]
+ 		'probability'=> 100, //[optional]
+ 		'user' => 'user', //user from xcache.admin.user settings
+       'password' => 'password', //plaintext password (xcache.admin.pass)
+ 	));
+}}}
+
 == app/config/database.php ==
 This file contains the definition for the DB connection that ViciClient will use. Change any necessary details here.
 {{{
