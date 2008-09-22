@@ -36,5 +36,18 @@ svn co http://
 
 == app/config/core.php ==
 == app/config/database.php ==
+This file contains the definition for the DB connection that ViciClient will use. Change any necessary details here.
+{{{
+	var $default = array(
+		'driver' => 'mysql',
+		'persistent' => true,
+		'host' => 'localhost',
+		'login' => 'cron',
+		'password' => '1234',
+		'database' => 'asterisk',
+		'prefix' => '',
+	);
+}}}
+
 
 = Modifications to MySQL Database =
