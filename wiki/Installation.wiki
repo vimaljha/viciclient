@@ -18,8 +18,9 @@ To be filled in later
 
 svn co http://
 
-
 = Configuring ViciClient =
 
-app/config/core.php
-app/config/database.php
+== app/config/core.php ==
+== app/config/database.php ==
+
+= Modifications to MySQL Database =
