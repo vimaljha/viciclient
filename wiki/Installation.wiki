@@ -1,5 +1,19 @@
 #summary ViciClient installation instructions
 
+= Installing JSON for PHP verions < 5.2 =
+ViciClient makes use of the PHP functions json_encode() and json_decode(), which until version 5.2 were not included in the core distribution. If your version of PHP is lower than 5.2, you need to install the PECL package JSON by issuing the following command:
+{{{
+pecl install json
+}}}
+This is dependent on having [http://pear.php.net/ PEAR], the PHP package repository, installed on your system. After installing the package, make sure the line
+{{{
+extension=json.so
+}}}
+appears in your php.ini file or in one of the included ini files in the php.d directory.
+
+= Installing the PHP-Java bridge for JasperReports =
+To be filled in later
+
 = Checking out the codebase =
 
 svn co http://
